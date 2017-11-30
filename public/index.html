@@ -12,8 +12,16 @@
 	    	<div id="headline">
 	    		<h2>movie database</h2>
 	    	</div>
-	    	<form id="form">
-	    		
+	    	<form id="form" method="">
+                <input type="text" name="Movie" placeholder="Enter movie name">
+	    		<select name="Rating">
+                    <option value="0">0 stars</option>         
+                    <option value="1">1 star</option>         
+                    <option value="2">2 stars</option>         
+                    <option value="3" selected>3 stars</option>         
+                    <option value="4">4 stars</option>         
+                </select>
+                <button type="submit">Add to database</button>
 	    	</form>
 	    	<div id="results">results</div>
     	</div>

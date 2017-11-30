@@ -1,9 +1,11 @@
+
 module.exports = {
   getMovies: () => {
     return fetch('/api/movies')
       .then(response => response.json());
   },
-  addMovie: () => {
+  addMovie: body => {
+    return fetch('/api/movies',{ method: 'POST', body: body })
   	console.log("add");
   },
   editMovie: () => {
